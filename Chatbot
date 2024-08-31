@@ -1,0 +1,31 @@
+def chatbot():
+    print("Hello! I'm a chatbot. How can I help you today?")
+    
+    while True:
+        user_input = input("You: ").lower()
+
+        if "hello" in user_input or "hi" in user_input:
+            print("Chatbot: Hello! How can I assist you today?")
+        
+        elif "how are you" in user_input:
+            print("Chatbot: I'm doing well! How about you?")
+        
+        elif "your name" in user_input:
+            print("Chatbot: I'm a chatbot created to assist you.")
+        
+        elif "weather" in user_input:
+            print("Chatbot: I can't check the weather right now, but can i help you in any other way?")    
+
+        elif "time" in user_input:
+            print("Chatbot: I can't check the time but you you sure can in your phone!")
+
+        elif "recommend" in user_input or "movies" in user_input:
+            print("Chatbot: Upon researching on the internet, I would recommend the movie Inception!")
+ 
+        elif "bye" in user_input or "exit" in user_input:
+            print("Chatbot: Bye! Hope you have a great day!")
+            break
+        
+        else:
+            print("Chatbot: I'm sorry, I didn't quite understand that. Can i help you with something else?")
+chatbot()
